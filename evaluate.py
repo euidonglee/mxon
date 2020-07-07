@@ -4,8 +4,6 @@ import numpy as np
 
 from arena_util import load_json
 
-#hi
-
 class ArenaEvaluator:
     def _idcg(self, l):
         return sum((1.0 / np.log(i + 2) for i in range(l)))
